@@ -20,4 +20,5 @@ from django.urls import path, include # для определния и вклю�
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myweb.urls')),#для передачи запросов в модуль urls в приложении
+    path('__debug__/', include("debug_toolbar.urls")),
 ]
